@@ -14,8 +14,8 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 }
 /** @var \WP_Framework_Presenter\Interfaces\Presenter $instance */
 /** @var array $args */
+! isset( $args['translate'] ) and $args['translate'] = [ 'value' ];
 ?>
 <?php $instance->form( 'input', array_merge( $args, [
-	'type'      => 'button',
-	'translate' => [ 'value' ],
+	'type' => 'button',
 ] ) ); ?>
