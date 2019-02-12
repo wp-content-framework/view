@@ -24,11 +24,11 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
             $(this).on('click', function () {
                 const _send_to_editor = window.send_to_editor;
                 window.send_to_editor = function (html) {
-                    let imgUrl = $("img", html).attr("src");
-                    if (imgUrl === undefined) {
-                        imgUrl = $(html).attr("src");
+                    let img_url = $("img", html).attr("src");
+                    if (undefined === img_url) {
+                        img_url = $(html).attr("src");
                     }
-                    $target.val(imgUrl).trigger('change');
+                    $target.val(img_url).trigger('change');
 
                     tb_remove();
                     if (_send_to_editor) window.send_to_editor = _send_to_editor;
