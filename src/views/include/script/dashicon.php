@@ -7,6 +7,9 @@
  * @copyright technote-space All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
  * @link https://technote.space
+ *
+ * Based on: https://github.com/bradvin/dashicons-picker/
+ * @license https://github.com/bradvin/dashicons-picker/blob/master/LICENSE
  */
 
 if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
