@@ -5,7 +5,7 @@
  * @version 0.0.1
  * @author technote-space
  * @copyright technote-space All Rights Reserved
- * @license https://opensource.org/licenses/mit-license.html MIT License
+ * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
  * @link https://technote.space
  */
 

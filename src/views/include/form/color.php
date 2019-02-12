@@ -1,6 +1,6 @@
 <?php
 /**
- * WP_Framework_View Views Include Form Color picker
+ * WP_Framework_View Views Include Form Color
  *
  * @version 0.0.1
  * @author technote-space
