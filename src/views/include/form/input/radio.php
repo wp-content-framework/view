@@ -16,6 +16,8 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 /** @var string $id */
 /** @var string $label */
 /** @var array $args */
+/** @var bool|null $checked */
+! empty( $checked ) and $args['attributes']['checked'] = 'checked';
 ?>
 <?php if ( isset( $label ) ): ?>
     <label <?php if ( isset( $id ) ): ?>for="<?php $instance->h( $id ); ?>"<?php endif; ?>>
