@@ -25,6 +25,7 @@ isset( $id ) and $attributes['id'] = $id;
 isset( $class ) and $attributes['class'] = $class;
 $attributes['href'] = $href;
 isset( $target ) and $attributes['target'] = $target;
+isset( $target ) and '_blank' === $target and $attributes['rel'] = 'noopener noreferrer';
 ! isset( $contents ) and $contents = '';
 ?>
 <a <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> >
