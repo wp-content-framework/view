@@ -2,7 +2,7 @@
 /**
  * WP_Framework_View Views Include Script Modal
  *
- * @version 0.0.3
+ * @version 0.0.6
  * @author Technote
  * @copyright Technote All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
