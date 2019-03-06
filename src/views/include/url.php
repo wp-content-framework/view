@@ -29,5 +29,5 @@ isset( $target ) and '_blank' === $target and $attributes['rel'] = 'noopener nor
 ! isset( $contents ) and $contents = '';
 ?>
 <a <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> >
-	<?php echo $contents ?>
+	<?php $instance->h( $contents, false, true, false ) ?>
 </a>

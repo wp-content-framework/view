@@ -28,4 +28,4 @@ global $allowedposttags;
 $allowed = $allowedposttags;
 unset( $allowed['textarea'] );
 ?>
-<textarea <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> ><?php echo wp_kses( $value, $allowed ); ?></textarea>
+<textarea <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> ><?php $instance->h( wp_kses( $value, $allowed ), false, true, false ); ?></textarea>

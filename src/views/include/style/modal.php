@@ -18,7 +18,7 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 <style>
     .<?php $instance->id();?>-loading {
         background-size: contain;
-        background: url(<?php echo $instance->get_img_url('loading.gif');?>) no-repeat;
+        background: url(<?php $instance->h($instance->get_img_url('loading.gif'));?>) no-repeat;
         text-align: center;
         margin: 0 auto;
         height: 30px;
@@ -28,7 +28,7 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
     }
 
     #<?php $instance->id();?>-modal {
-        background: url(<?php echo $instance->get_img_url('back.png');?>);
+        background: url(<?php $instance->h($instance->get_img_url('back.png'));?>);
         background-size: cover;
         position: fixed;
         top: 0;

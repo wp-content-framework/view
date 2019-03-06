@@ -22,7 +22,7 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
         }
 
         function <?php $instance->modal_class();?>() {
-            const target = '<?php if ( is_admin() ): echo '#wpwrap'; else: echo 'body'; endif;?>';
+            const target = '<?php if ( is_admin() ): ?>#wpwrap<?php else: ?>body<?php endif;?>';
             const html = '<div id="<?php $instance->id();?>-modal"><div class="<?php $instance->id();?>-loading"></div><div class="<?php $instance->id();?>-loading-message"></div></div><div id="<?php $instance->id();?>-modal-message-wrap"><div id="<?php $instance->id();?>-modal-message"></div></div>';
             $(html).prependTo(target).hide();
             $('#<?php $instance->id();?>-modal-message').click(function (e) {
