@@ -2,7 +2,7 @@
 /**
  * WP_Framework_View Views Include Form Textarea
  *
- * @version 0.0.1
+ * @version 0.0.6
  * @author Technote
  * @copyright Technote All Rights Reserved
  * @license http://www.opensource.org/licenses/gpl-2.0.php GNU General Public License, version 2
@@ -28,4 +28,4 @@ global $allowedposttags;
 $allowed = $allowedposttags;
 unset( $allowed['textarea'] );
 ?>
-<textarea <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> ><?php echo wp_kses( $value, $allowed ); ?></textarea>
+<textarea <?php $instance->get_view( 'include/attributes', array_merge( $args, [ 'attributes' => $attributes ] ), true ); ?> ><?php $instance->h( wp_kses( $value, $allowed ), false, true, false ); ?></textarea>
