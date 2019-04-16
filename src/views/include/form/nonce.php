@@ -16,6 +16,9 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 /** @var array $args */
 /** @var string $nonce_key */
 /** @var string $nonce_value */
+if ( empty( $nonce_key ) || empty( $nonce_value ) ) {
+	return;
+}
 ?>
 <?php $instance->form( 'input/hidden', array_merge( $args, [
 	'name'  => $nonce_key,
