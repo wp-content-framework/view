@@ -15,7 +15,6 @@
 if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 	return;
 }
-/** @var \WP_Framework_Presenter\Interfaces\Presenter $instance */
 ?>
 
 <style>
