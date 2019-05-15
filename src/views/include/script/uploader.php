@@ -18,16 +18,16 @@ if ( ! defined( 'WP_CONTENT_FRAMEWORK' ) ) {
 ?>
 
 <script>
-	( function ( $ ) {
-		$( ".<?php $instance->h( $instance->get_media_uploader_class() );?>" ).each( function () {
+	( function( $ ) {
+		$( ".<?php $instance->h( $instance->get_media_uploader_class() );?>" ).each( function() {
 			const $target = $( $( this ).data( 'target' ) );
 			if ( $target.length === 0 ) {
 				return;
 			}
 
-			$( this ).on( 'click', function () {
+			$( this ).on( 'click', function() {
 				const _send_to_editor = window.send_to_editor;
-				window.send_to_editor = function ( html ) {
+				window.send_to_editor = function( html ) {
 					let img_url = $( 'img', html ).attr( 'src' );
 					if ( undefined === img_url ) {
 						img_url = $( html ).attr( 'src' );

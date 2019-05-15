@@ -92,7 +92,7 @@ $icons = $instance->app->get_config( 'dashicon', 'available', [] );
 						} );
 
 						$( document ).on( 'mouseup.' + namespace, function( e ) {
-							if ( !popup.is( e.target ) && popup.has( e.target ).length === 0 ) {
+							if ( ! popup.is( e.target ) && popup.has( e.target ).length === 0 ) {
 								$this.destroy();
 								$this.stop();
 							}
