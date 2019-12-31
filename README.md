@@ -30,6 +30,5 @@
 * [presenter](https://github.com/wp-content-framework/presenter)
 
 # Author
-
-[GitHub (Technote)](https://github.com/technote-space)
-[Blog](https://technote.space)
+- [GitHub (Technote)](https://github.com/technote-space)
+- [Blog](https://technote.space)
